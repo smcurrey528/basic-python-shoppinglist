@@ -1,4 +1,5 @@
-item_name_1 = "apples"
+
+item_name_1 = input('Name your first item')
 item_name_2 = "shampoo"
 item_name_3 = "chicken"
 item_name_4 = "yogurt"
@@ -23,9 +24,12 @@ total_cost_4 = item_quant_4 * item_price_4
 total_cost_5= item_quant_5 * item_price_5
 
 total_items= item_quant_1 + item_quant_2 +item_quant_3 +item_quant_4 + item_quant_5
+tax = .0825
 
-total_grocery_cost = total_cost_1 + total_cost_2 + total_cost_3 + total_cost_4 + total_cost_5
+total_grocery_cost = (total_cost_1 + total_cost_2 + total_cost_3 + total_cost_4 + total_cost_5)*tax + (total_cost_1 + total_cost_2 + total_cost_3 + total_cost_4 + total_cost_5)
 #   need to use the f formatted string since you have strings and numbers. Mismatched data types
+
+
 
 apple = f"{item_quant_1} {item_name_1} = {total_cost_1}"
 shampoo = f"{item_quant_2} {item_name_2} = {total_cost_2}"
