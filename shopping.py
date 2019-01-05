@@ -1,3 +1,4 @@
+import math
 
 item_name_1 = input('Name your first item')
 item_name_2 = "shampoo"
@@ -42,4 +43,4 @@ print(chicken)
 print(yogurt)
 print(carrot)
 print(total_items)
-print(total_grocery_cost)
+print(round(total_grocery_cost))
